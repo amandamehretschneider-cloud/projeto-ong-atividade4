@@ -27,6 +27,10 @@ function render(viewName) {
 
   app.innerHTML = html;
 
+  // mover foco pro conteúdo
+  app.setAttribute('tabindex', '-1');
+  app.focus();
+
   // depois de renderizar, ligar eventos específicos da página
   if (viewName === 'cadastro') {
     setupCadastroPage();

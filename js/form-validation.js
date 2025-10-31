@@ -44,3 +44,14 @@ const FormValidation = {
     container.innerHTML = '';
   }
 };
+
+// abrir/fechar submenu com enter/espaço
+document.addEventListener('click', (e) => {
+  const parentBtn = e.target.closest('.nav-parent');
+  if (parentBtn) {
+    const expanded = parentBtn.getAttribute('aria-expanded') === 'true';
+    parentBtn.setAttribute('aria-expanded', String(!expanded));
+    // opcional: adicionar/remover classe no li
+    parentBtn.parentElement.classList.toggle('submenu-open', !expanded);
+  }
+});

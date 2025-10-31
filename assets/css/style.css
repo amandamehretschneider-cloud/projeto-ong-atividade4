@@ -520,3 +520,10 @@ footer {
     margin-bottom: 0.5rem;
   }
 }
+
+
+.nav-links li.submenu-open > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

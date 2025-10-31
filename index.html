@@ -20,17 +20,18 @@
       </button>
 
       <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="/" data-link>Início</a></li>
         <li>
-          <a href="projetos.html">Projetos</a>
-          <!-- submenu -->
-          <ul class="submenu" aria-label="submenu projetos">
-            <li><a href="projetos.html#projetos-ativos">Projetos ativos</a></li>
-            <li><a href="projetos.html#voluntariado">Seja um voluntário</a></li>
-            <li><a href="projetos.html#doacoes">Como doar</a></li>
+          <button class="nav-parent" aria-haspopup="true" aria-expanded="false">
+            Projetos
+          </button>
+          <ul class="submenu" aria-label="submenu Projetos">
+            <li><a href="/projetos#projetos-ativos" data-link>Projetos ativos</a></li>
+            <li><a href="/projetos#voluntariado" data-link>Voluntariado</a></li>
+            <li><a href="/projetos#doacoes" data-link>Como doar</a></li>
           </ul>
         </li>
-        <li><a href="cadastro.html">Seja voluntário</a></li>
+        <li><a href="/cadastro" data-link>Cadastro</a></li>
       </ul>
     </nav>
   </header>
