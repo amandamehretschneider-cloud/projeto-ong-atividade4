@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rede do Bem - Organização Não Governamental</title>
+  <meta name="description" content="Plataforma web para ONGs gerenciarem projetos, voluntários e doações com transparência.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header-wrapper">
+    <div class="topbar">
+      <p><strong>Contato:</strong> (11) 99999-9999 · contato@rededobem.org · Rua da Solidariedade, 100 - São Paulo/SP</p>
+    </div>
+    <nav aria-label="Menu principal" id="mainNav">
+      <a class="logo" href="index.html">Rede do Bem</a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li>
+          <a href="projetos.html">Projetos</a>
+          <!-- submenu -->
+          <ul class="submenu" aria-label="submenu projetos">
+            <li><a href="projetos.html#projetos-ativos">Projetos ativos</a></li>
+            <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+            <li><a href="projetos.html#doacoes">Como doar</a></li>
+          </ul>
+        </li>
+        <li><a href="cadastro.html">Seja voluntário</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div>
+        <h1 id="titulo-principal">Juntos transformamos realidades</h1>
+        <p>Nossa ONG conecta pessoas, recursos e causas sociais para gerar impacto mensurável em comunidades vulneráveis.</p>
+        <a class="btn" href="projetos.html">Ver projetos</a>
+        <a class="btn-secondary" href="cadastro.html">Quero me cadastrar</a>
+      </div>
+      <figure>
+        <picture>
+          <source srcset="assets/img/hero-ong.avif" type="image/avif">
+          <source srcset="assets/img/hero-ong.webp" type="image/webp">
+          <img src="assets/img/hero-ong.jpg" alt="Voluntários da ONG sorrindo em uma ação social">
+        </picture>
+      
+        <figcaption>Ações de impacto em 12 cidades brasileiras.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="missao" class="institucional">
+      <header>
+        <h2 id="missao">Missão, Visão e Valores</h2>
+      </header>
+      <article>
+        <h3>Missão</h3>
+        <p>Promover inclusão social por meio de projetos de educação, saúde e geração de renda.</p>
+      </article>
+      <article>
+        <h3>Visão</h3>
+        <p>Ser referência nacional em gestão transparente de projetos sociais até 2030.</p>
+      </article>
+      <article>
+        <h3>Valores</h3>
+        <ul>
+          <li>Transparência</li>
+          <li>Respeito às pessoas</li>
+          <li>Colaboração</li>
+          <li>Responsabilidade social</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="transparencia" class="transparencia">
+      <h2 id="transparencia">Transparência</h2>
+      <p>Acompanhe nossos relatórios de prestação de contas e resultados.</p>
+      <ul>
+        <li><a href="#">Relatório de atividades 2024 (PDF)</a></li>
+        <li><a href="#">Balanço de doações 2024 (PDF)</a></li>
+        <li><a href="#">Política de privacidade</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contato" class="contato">
+      <h2 id="contato">Fale com a gente</h2>
+      <p>E-mail: <a href="mailto:contato@rededobem.org">contato@rededobem.org</a></p>
+      <p>Telefone/WhatsApp: (11) 99999-9999</p>
+      <p>Endereço: Rua da Solidariedade, 100 - São Paulo/SP</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rede do Bem. Todos os direitos reservados.</p>    
+  </footer>
+
+  <!-- scripts -->
+  <script src="js/templates.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
